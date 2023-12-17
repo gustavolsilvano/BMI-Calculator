@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+struct BMI {
+    let value: Float
+    let advice: String
+    let color: UIColor
+    
+    func getValueFormatted() -> String {
+        return String(format: "%.1f", value)
+    }
+}
